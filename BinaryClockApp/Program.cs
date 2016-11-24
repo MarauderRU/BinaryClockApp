@@ -18,7 +18,7 @@ namespace ConsoleApplication1
                 dt = DateTime.Now;
             }
 
-            public string GetTime(int gmt)
+            public string GetTime2(int gmt)
             {
                 dt = DateTime.UtcNow;
                 dt = dt.AddHours(gmt);
@@ -32,17 +32,17 @@ namespace ConsoleApplication1
                             + Convert.ToString(sec, 2).PadLeft(8, '0');
             }
 
-            public string GetHour()
+            public string GetHour2()
             {
                 return Convert.ToString(hour, 2).PadLeft(8, '0');
             }
 
-            public string GetMin()
+            public string GetMin2()
             {
                 return Convert.ToString(min, 2).PadLeft(8, '0');
             }
 
-            public string GetSec()
+            public string GetSec2()
             {
                 return Convert.ToString(sec, 2).PadLeft(8, '0');
             }
@@ -55,7 +55,7 @@ namespace ConsoleApplication1
 
             while (true)
             {
-                Console.Write(clock.GetTime(3) + "\r");
+                Console.Write(clock.GetTime2(3) + "\r");
             }//while
         }
     }
